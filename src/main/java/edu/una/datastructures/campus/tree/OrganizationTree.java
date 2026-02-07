@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package edu.una.datastructures.campus.tree;
 
-/**
- *
- * @author Cris
- */
-public class OrganizationTree {
-    
+import edu.una.datastructures.campus.model.Brigade;
+
+public class OrganizationTree extends GeneralTree {
+
+    public OrganizationTree(Brigade rootBrigade) {
+        super(rootBrigade);
+    }
+
+    public void addBrigade(TreeNode parent, Brigade brigade) {
+        addChild(parent, brigade);
+    }
 }

@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package edu.una.datastructures.campus.model;
 
-/**
- *
- * @author Cris
- */
 public class Brigade {
-    
+
+    private String name;
+
+    public Brigade(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Brigade: " + name;
+    }
 }
